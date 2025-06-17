@@ -19,18 +19,70 @@
     <!-- My Style -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Embedded CSS (Opsional untuk memastikan tampil rapi) -->
+    <!-- Embedded CSS (Perbaikan Styling) -->
     <style>
       body {
         font-family: 'Ancizar Sans', sans-serif;
-        background-color: #f9f9f9;
-        color: #333;
+        background-color: #fff;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #004d40;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-logo {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .navbar-logo span {
+        color: #ffab00;
+      }
+
+      .navbar-nav a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s;
+      }
+
+      .navbar-nav a:hover {
+        color: #ffab00;
+      }
+
+      .navbar-extra a {
+        margin-left: 1rem;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .spacer {
+        height: 80px; /* Sesuai tinggi navbar */
+      }
+
+      #abot {
+        scroll-margin-top: 100px;
       }
 
       .about-page {
         padding: 4rem 2rem;
         max-width: 800px;
         margin: auto;
+        color: #000;
       }
 
       .about-page h1 {
@@ -45,91 +97,3 @@
         margin-bottom: 1rem;
         text-align: justify;
       }
-
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      .navbar-logo {
-        font-weight: bold;
-        font-size: 1.5rem;
-        color: #333;
-        text-decoration: none;
-      }
-
-      .navbar-logo span {
-        color: #ff5733;
-      }
-
-      .navbar-nav a {
-        margin: 0 1rem;
-        text-decoration: none;
-        color: #555;
-        transition: color 0.3s;
-      }
-
-      .navbar-nav a:hover {
-        color: #ff5733;
-      }
-
-      .navbar-extra a {
-        margin-left: 1rem;
-        color: #333;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navbar Start -->
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">BAJU<span>KITA</span></a>
-
-      <div class="navbar-nav">
-        <a href="#">Home</a>
-        <a href="#abot">Tentang Kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
-      </div>
-
-      <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Tentang Kami Section -->
-    <section id="abot" class="about-page">
-      <h1>Tentang Kami</h1>
-      <p>
-        BAJUKITA adalah toko fashion online yang berdedikasi menyediakan pakaian berkualitas tinggi untuk pria, wanita, dan anak-anak. Kami percaya bahwa setiap orang berhak tampil keren dengan harga yang terjangkau.
-      </p>
-      <p>
-        Berdiri sejak 2020, BAJUKITA telah melayani ribuan pelanggan di seluruh Indonesia dengan koleksi fashion terkini, layanan cepat, dan kemudahan belanja online.
-      </p>
-      <p>
-        Kami terus berkembang dan berinovasi untuk memberikan pengalaman belanja terbaik bagi Anda.
-      </p>
-    </section>
-
-    <!-- Feather Icons Load -->
-    <script>
-      feather.replace();
-    </script>
-
-    <!-- My Javascript -->
-    <script src="script.js"></script>
-  </body>
-</html>
-
-
-     
-
-
-   
